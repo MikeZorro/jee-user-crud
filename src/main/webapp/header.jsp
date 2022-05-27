@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,7 +31,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
         <!-- Sidebar - Brand -->
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/user/list">
             <div class="sidebar-brand-icon rotate-n-15">
                 <i class="fas fa-laugh-wink"></i>
             </div>
@@ -42,15 +43,21 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-            <a class="nav-link" href="index.html">
-                <i class="fas fa-fw fa-tachometer-alt"></i>
-                <span>Not usable for now</span></a>
+            <a class="nav-link" href="/user/list">
+                <i class="fas fa-fw fa-user-clock"></i>
+                <span>User List</span></a>
+        </li>
+        <hr class="sidebar-divider">
+        <div class="sidebar-heading">
+           Contact
+        </div>
+        <li class="nav-item active">
+            <a class="nav-link" href="https://www.linkedin.com/in/michal-soroczynski-6b8383a3/" target="_blank">
+                <i class="fas fa-fw fa-cogs"></i>
+                <span>Your Developer</span></a>
         </li>
 
         <!-- Sidebar Toggler (Sidebar) -->
-        <div class="text-center d-none d-md-inline">
-            <button class="rounded-circle border-0" id="sidebarToggle"></button>
-        </div>
 
     </ul>
     <!-- End of Sidebar -->
