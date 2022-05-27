@@ -42,6 +42,9 @@
         <hr class="sidebar-divider my-0">
 
         <!-- Nav Item - Dashboard -->
+        <div class="sidebar-heading">
+            List
+        </div>
         <li class="nav-item active">
             <a class="nav-link" href="/user/list">
                 <i class="fas fa-fw fa-user-clock"></i>
