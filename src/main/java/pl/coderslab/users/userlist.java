@@ -10,10 +10,19 @@ import pl.coderslab.utils.*;
 public class userlist extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
         UserDAO userDao = new UserDAO();
         request.setAttribute("users", userDao.findAll());
         getServletContext().getRequestDispatcher("/users/list.jsp")
                 .forward(request, response);
     }
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String name = request.getParameter("id");
+        if(name != null ){
+            request.setAttribute("id", name);
+            getServletContext().getRequestDispatcher("/users/show.jsp").forward(request, response);
 
+        }
+    }
 }

@@ -71,8 +71,25 @@
         <!-- Main Content -->
         <div id="content">
 
+
             <!-- Topbar -->
             <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                <form action="/user/show" class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                    <div class="input-group">
+                        <input type="search" name="id" class="form-control bg-light border-0 small" placeholder="Search for user by id" aria-label="Search" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                        <button type="search" class="btn btn-primary">
+                            <i class="fas fa-search fa-sm"></i>
 
+                        </button>
+                        </div>
+                        </div>
+
+                </form>
             </nav>
+
+
+
             <!-- End of Topbar -->
+
+

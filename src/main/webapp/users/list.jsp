@@ -3,6 +3,7 @@
 
 <%@ include file="/header.jsp" %>
 
+
 <!-- Begin Page Content -->
 <div class="container-fluid">
 
@@ -39,8 +40,8 @@
         </table>
       </div>
     </div>
-  </div>
-</div>
+
+
 <%@ include file="/footer.jsp" %>
 
 <!-- /.container-fluid -->

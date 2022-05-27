@@ -13,9 +13,13 @@ public class userShow extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         UserDAO userDAO= new UserDAO();
-        User user = userDAO.read(Integer.parseInt(request.getParameter("id")));
-        request.setAttribute("user", user);
-        getServletContext().getRequestDispatcher("/users/details.jsp").forward(request, response);
+        try {
+            User user = userDAO.read(Integer.parseInt(request.getParameter("id")));
+            request.setAttribute("user", user);
+            getServletContext().getRequestDispatcher("/users/details.jsp").forward(request, response);
+        } catch (NumberFormatException e){
+            response.sendRedirect("/user/list");
+        }
     }
 
 }
